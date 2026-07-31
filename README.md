@@ -15,11 +15,11 @@
 ## Как это выглядит
 
 <p align="center">
-  <img src="screenshots/home.png" width="180" alt="Главная: погода по местоположению, курс валют, разделы">
-  <img src="screenshots/translator.png" width="180" alt="Переводчик: голос, текст, фото, история">
-  <img src="screenshots/guide.png" width="180" alt="ИИ-гид построил маршрут и определил район">
-  <img src="screenshots/map.png" width="180" alt="Карта: маршрут 4,6 км и вызов такси">
-  <img src="screenshots/currency.png" width="180" alt="Калькулятор валют по курсу ЦБ">
+  <img src="screenshots/01-home.png" width="180" alt="Главная: погода по местоположению, курс валют, разделы">
+  <img src="screenshots/03-translator-modes.png" width="180" alt="Переводчик: голос, текст, фото, история">
+  <img src="screenshots/06-guide-route.png" width="180" alt="ИИ-гид построил маршрут и определил район">
+  <img src="screenshots/11-map-route-taxi.png" width="180" alt="Карта: маршрут 4,6 км и вызов такси">
+  <img src="screenshots/14-currency.png" width="180" alt="Калькулятор валют по курсу ЦБ">
 </p>
 
 <p align="center">
@@ -28,6 +28,63 @@
     Снято в приложении версии 1.0.76. Интерфейс рабочий; дизайн-система — задача ближайших месяцев.
   </sub>
 </p>
+
+### Все экраны
+
+<details>
+<summary>Развернуть — 19 экранов приложения</summary>
+
+**Переводчик**
+
+<p>
+  <img src="screenshots/03-translator-modes.png" width="150" alt="Выбор режима перевода">
+  <img src="screenshots/02-voice-settings.png" width="150" alt="Голосовой перевод: выбор голоса и языков">
+  <img src="screenshots/04-text-two-sided.png" width="150" alt="Текстовый перевод: экран разделён на двоих">
+  <img src="screenshots/05-photo-offline-or-ai.png" width="150" alt="Перевод по фото: переключатель офлайн и ИИ">
+</p>
+
+Экран текста разделён пополам, и верхняя половина перевёрнута — она для
+собеседника, сидящего напротив. На экране камеры видно предупреждение о том,
+что офлайн-распознавание читает только латиницу.
+
+**ИИ-гид и карта**
+
+<p>
+  <img src="screenshots/06-guide-route.png" width="150" alt="Гид построил маршрут и определил район">
+  <img src="screenshots/07-map-cafes.png" width="150" alt="Карта: кафе">
+  <img src="screenshots/08-map-restaurants.png" width="150" alt="Карта: рестораны">
+  <img src="screenshots/09-map-atms.png" width="150" alt="Карта: банкоматы">
+</p>
+<p>
+  <img src="screenshots/10-map-place-card.png" width="150" alt="Карточка места: пешком, на машине, сохранить">
+  <img src="screenshots/11-map-route-taxi.png" width="150" alt="Маршрут и вызов такси">
+  <img src="screenshots/12-map-saved-places.png" width="150" alt="Свои сохранённые места">
+  <img src="screenshots/13-map-categories.png" width="150" alt="Категории мест на карте">
+</p>
+
+Точки на карте окрашены по категориям. По тапу открывается карточка места:
+маршрут пешком или на машине и сохранение в «Мои места».
+
+**Остальное**
+
+<p>
+  <img src="screenshots/01-home.png" width="150" alt="Главная">
+  <img src="screenshots/14-currency.png" width="150" alt="Калькулятор валют">
+  <img src="screenshots/15-weather.png" width="150" alt="Погода на 7 дней">
+  <img src="screenshots/16-emergency.png" width="150" alt="Экстренные номера">
+</p>
+<p>
+  <img src="screenshots/17-services.png" width="150" alt="Услуги: прокат авто, билеты, сим-карты">
+  <img src="screenshots/18-subscription.png" width="150" alt="Подписка и лимиты бесплатного тарифа">
+  <img src="screenshots/19-settings-languages.png" width="150" alt="Настройки и выбор языка интерфейса">
+</p>
+
+Раздел услуг пока наполнен одним партнёром — витрина построена, договорённости
+в работе. На экране подписки видны лимиты бесплатного тарифа и то, что готовится
+дальше.
+
+</details>
+
 
 ---
 
