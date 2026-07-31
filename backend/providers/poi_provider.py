@@ -9,6 +9,12 @@ import aiohttp
 
 from .config import settings
 
+# Overpass отбивает запросы без внятного User-Agent — Apache отвечает 406, и на
+# карте молча пропадают кафе и рестораны. aiohttp по умолчанию своего заголовка
+# не ставит вовсе, поэтому задаём явно. В geocoding_provider та же история и
+# такое же лечение — грабли общие для сервисов OpenStreetMap.
+_HEADERS = {"User-Agent": "uzbekistan-ai-guide/1.0"}
+
 # Категория -> OSM-фильтр для Overpass.
 CATEGORY_OSM = {
     "atm": '["amenity"="atm"]',
@@ -40,7 +46,10 @@ async def _overpass_find(category: str, lat: float, lng: float, radius: int, lim
     try:
         async with aiohttp.ClientSession() as session:
             async with session.post(
-                settings.overpass_url, data={"data": query}, timeout=aiohttp.ClientTimeout(total=30)
+                settings.overpass_url,
+                data={"data": query},
+                headers=_HEADERS,
+                timeout=aiohttp.ClientTimeout(total=30),
             ) as resp:
                 if resp.status != 200:
                     raise PoiError(f"Overpass вернул статус {resp.status}")
